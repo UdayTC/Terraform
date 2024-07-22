@@ -4,12 +4,8 @@ data "aws_vpc" "vpc_existente" {
 
 resource "aws_subnet" "subnet_dev_a" {
   vpc_id     = data.aws_vpc.vpc_existente.id
-  cidr_block = "10.0.2.0/24"
-
-  tags = {
-    Name       = "subnet_dev_a"
-    Deploy_via = "Terraform"
-  }
+  cidr_block = var.bloco_cidr
+  tags = var.tags
 }
 
 output "subnet_id" {
