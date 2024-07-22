@@ -1,9 +1,6 @@
 resource "aws_s3_bucket" "bucket_s3" {
   bucket = "bucket-tfstate-uday-dev"
-
-  tags = {
-    Provisioner = "Terraform"
-  }
+  tags = var.tags
 }
 
 resource "aws_s3_bucket_versioning" "versioning" {

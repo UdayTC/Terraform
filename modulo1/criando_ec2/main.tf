@@ -16,6 +16,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-east-1"
-  profile = "account_terraform"
+  region  = var.region
+  profile = var.account
 }
+
