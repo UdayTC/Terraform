@@ -41,7 +41,7 @@ Contribuições são bem-vindas! Se você encontrou um bug, tem uma sugestão ou
 Para dúvidas ou mais informações, entre em contato com a equipe da Uday Academy:
 
 - **E-mail**: contato@uday.com.br
-- **Site**: [uday.com.br]([https://www.udayacademy.com](https://cursos.uday.com.br/id/terraform-mastery-infraestrutura-como-codigo/))
+- **Site**: [uday.com.br]((https://cursos.uday.com.br/id/terraform-mastery-infraestrutura-como-codigo/))
 - **Forum**: [docs.uday.com.br/forums/](https://docs.uday.com.br/forums/)
 
 ---

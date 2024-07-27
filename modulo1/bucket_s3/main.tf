@@ -8,9 +8,9 @@ terraform {
     }
   }
   backend "s3" {
-    bucket  = "bucket-tfstate-uday-dev"
-    key     = "dev/criando_ec2/terraform.tfstate"
-    region  = "us-east-1"
+    bucket = "bucket-tfstate-uday-dev"
+    key    = "dev/import_bucket_s3/terraform.tfstate"
+    region = "us-east-1"
     profile = "account_terraform"
   }
 }
@@ -19,4 +19,3 @@ provider "aws" {
   region  = var.region
   profile = var.account
 }
-

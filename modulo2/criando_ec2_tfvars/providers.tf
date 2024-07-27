@@ -7,12 +7,6 @@ terraform {
       version = "~> 5.0"
     }
   }
-  backend "s3" {
-    bucket  = "bucket-tfstate-uday-dev"
-    key     = "dev/criando_ec2/terraform.tfstate"
-    region  = "us-east-1"
-    profile = "account_terraform"
-  }
 }
 
 provider "aws" {

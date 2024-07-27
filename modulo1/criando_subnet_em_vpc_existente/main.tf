@@ -7,15 +7,16 @@ terraform {
       version = "~> 5.0"
     }
   }
-  backend "s3" {
-    bucket = "bucket-tfstate-uday-dev"
-    key    = "dev/nome-do-servico/terraform.tfstate"
-    region = "us-east-1"
-    profile = "account_terraform"
-  }
+  # backend "s3" {
+  #   bucket = "bucket-tfstate-uday-dev"
+  #   key    = "dev/nome-do-servico/terraform.tfstate"
+  #   region = "us-east-1"
+  #   profile = "account_terraform"
+  # }
 }
 
 provider "aws" {
-  region  = "us-east-1"
-  profile = "account_terraform"
+  region  = var.region
+  profile = var.profile
 }
+
