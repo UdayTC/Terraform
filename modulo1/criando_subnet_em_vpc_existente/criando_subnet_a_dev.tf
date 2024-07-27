@@ -5,7 +5,7 @@ data "aws_vpc" "vpc_existente" {
 resource "aws_subnet" "subnet_dev_a" {
   vpc_id     = data.aws_vpc.vpc_existente.id
   cidr_block = var.bloco_cidr
-  tags = var.tags
+  tags       = var.tags
 }
 
 output "subnet_id" {
@@ -15,5 +15,5 @@ output "subnet_id" {
 
 output "criando_na_vpc" {
   description = "Em qual VPC foi criada a subnet"
-  value = aws_subnet.subnet_dev_a.vpc_id
+  value       = aws_subnet.subnet_dev_a.vpc_id
 }
